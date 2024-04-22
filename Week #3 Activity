@@ -1,0 +1,49 @@
+public class Product
+{
+	  // Attributes
+    private String productName;
+    private double price;
+
+    // Default constructor
+    public Product() {
+        productName = "";
+        price = 0.0;
+    }
+
+    // Setter methods
+    public void setProductName(String productName) 
+    {
+        this.productName = productName;
+    }
+
+    public void setPrice(double price)
+    {
+        this.price = price;
+    }
+
+    // Getter methods
+    public String getProductName() 
+    {
+        return productName;
+    }
+
+    public double getPrice()
+    
+    {
+        return price;
+    }
+
+    public static void main(String[] args) 
+    {
+        // Instantiate object of class
+        Product laptop = new Product();
+
+        // Access methods to set product name and price
+        laptop.setProductName("Laptop");
+        laptop.setPrice(800);
+
+        // Display product details
+        System.out.println("Product Name: " + laptop.getProductName());
+        System.out.println("Price: $" + laptop.getPrice());
+    }
+}
